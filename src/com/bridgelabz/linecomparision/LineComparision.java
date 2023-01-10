@@ -4,32 +4,10 @@ public class LineComparision {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparison computation program!");
+		int x1 = 21 , y1 = 16 ;
+		int x2 = 18 , y2 = 27;
 		
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter coordinates of first point: ");
-		int x1 = scanner.nextInt();
-		int y1 = scanner.nextInt();
-		int x1 = 10 , y1 = 16 ;
-		int x2 = 18 ,  y2 = 7;
-		int x3 = 16 ,  y3 = 9;
-		int x4 = 25 , y4 = 45;
-		
-		Double length1 = Math.sqrt(Math.pow(x2- x1, 2) + Math.pow(y2 - y1, 2));
-		Double length2  = Math.sqrt(Math.pow(x4- x3, 2) + Math.pow(y4 - y3, 2));
-	
-		System.out.println("Length of first line = " + length1);
-		
-		System.out.println("Length of second line = " + length2);
-		
-		System.out.println(length1.compareTo(length2));
-		
-		if(length1.compareTo(length2) == 1) { 
-			System.out.println("First line is greater than second line");
-		}
-		else if(length1.compareTo(length2) == -1) { 
-			System.out.println("First line is lesser than second line");
-		}
-		else
-			System.out.println("Both lines are Equal");	
-		}
+		double length = Math.sqrt(Math.pow(x2- x1, 2) + Math.pow(y2 - y1, 2));
+		System.out.println("Length of line = " + length);
 	}
+}
